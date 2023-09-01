@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'tasks'
 ]
 
 MIDDLEWARE = [
@@ -75,8 +76,12 @@ WSGI_APPLICATION = 'django_crud_api.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'BD Prueba CRUD',
+        'USER': 'postgres',
+        'PASSWORD': 'Boston99.',
+        'HOST': 'localhost',  # O la dirección IP de tu servidor PostgreSQL
+        'PORT': '5432',  # Puerto por defecto de PostgreSQL
     }
 }
 
