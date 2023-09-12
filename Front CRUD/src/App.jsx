@@ -4,6 +4,8 @@ import { TaskFormPage } from './pages/TaskFormPage'
 import { TasksPage } from './pages/TasksPage'
 import { Navigation } from './components/Navigation'
 import { Toaster } from "react-hot-toast"
+import { LoginPage } from './pages/LoginPage'
+import { RegisterPage } from './pages/RegisterPage'
 
 export function App() {
   return (
@@ -15,6 +17,8 @@ export function App() {
         <Route path="/tasks" element={<TasksPage/>} />
         <Route path="/tasks-create" element={<TaskFormPage/>} />
         <Route path="/tasks/:id" element={<TaskFormPage/>} />
+        <Route path="/login" element={<LoginPage/>} />
+        <Route path="/register" element={<RegisterPage/>} />
       </Routes>
       <Toaster />
       </div>

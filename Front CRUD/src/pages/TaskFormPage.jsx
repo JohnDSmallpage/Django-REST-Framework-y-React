@@ -44,7 +44,7 @@ export function TaskFormPage() {
 
   return (
    <>
-    <form onSubmit={onSubmit} className='flex flex-col items-center space-y-4'>
+    <form onSubmit={onSubmit} className='flex flex-col items-center space-y-4 mt-5'>
   <input
     type="text"
     placeholder="Title"
